@@ -1,0 +1,27 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "npm",
+      "script": "lint",
+      "problemMatcher": [],
+      "label": "npm: lint",
+      "detail": "eslint . -c eslintrc.json"
+    },
+    {
+      "type": "npm",
+      "script": "lint-fix",
+      "problemMatcher": [],
+      "label": "npm: lint-fix",
+      "detail": "eslint . -c eslintrc.json --fix"
+    },
+    {
+      "type": "npm",
+      "script": "test",
+      "group": "test",
+      "problemMatcher": [],
+      "label": "npm: test",
+      "detail": "npm run lint && tape test/*.js"
+    }
+  ]
+}
