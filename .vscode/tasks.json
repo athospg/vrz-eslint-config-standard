@@ -22,6 +22,13 @@
       "problemMatcher": [],
       "label": "npm: test",
       "detail": "npm run lint && tape test/*.js"
+    },
+    {
+      "type": "npm",
+      "script": "publish",
+      "problemMatcher": [],
+      "label": "npm: publish",
+      "detail": "npm publish --access public"
     }
   ]
 }

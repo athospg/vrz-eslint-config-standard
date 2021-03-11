@@ -71,7 +71,7 @@
       }
     ],
     "strict": "error",
-    "no-shadow": "error",
+    "no-shadow": "off",
     "array-bracket-newline": ["error", "consistent"],
     "array-bracket-spacing": [
       "error",
@@ -83,7 +83,13 @@
     ],
     "array-element-newline": ["error", "consistent"],
     "block-spacing": "error",
-    "brace-style": ["error", "allman", { "allowSingleLine": true }],
+    "brace-style": [
+      "error",
+      "allman",
+      {
+        "allowSingleLine": true
+      }
+    ],
     "capitalized-comments": ["off"],
     "comma-dangle": [
       "error",
@@ -106,13 +112,13 @@
         }
       }
     ],
-    "lines-between-class-members": ["error", "always"],
+    "lines-between-class-members": ["error", "always", { "exceptAfterSingleLine": true }],
     "max-len": [
       "error",
       {
         "code": 120,
         "tabWidth": 2,
-        "comments": 100
+        "comments": 120
       }
     ],
     "max-lines": ["error", 300],
@@ -191,7 +197,13 @@
     "space-before-function-paren": ["error", "never"],
     "space-in-parens": ["error", "never"],
     "space-infix-ops": "error",
-    "space-unary-ops": ["error", { "words": true, "nonwords": false }],
+    "space-unary-ops": [
+      "error",
+      {
+        "words": true,
+        "nonwords": false
+      }
+    ],
     "arrow-body-style": ["error", "as-needed"],
     "arrow-parens": ["error", "as-needed"],
     "arrow-spacing": "error",

@@ -1,7 +1,7 @@
 {
   "name": "@vrz/eslint-config-standard",
   "description": "ESLint Shareable Config",
-  "version": "0.0.1",
+  "version": "0.1.1",
   "author": {
     "name": "Athos Garcia",
     "email": "athospg@outlook.com"
@@ -11,7 +11,8 @@
   "scripts": {
     "lint": "eslint . -c eslintrc.json",
     "lint-fix": "eslint . -c eslintrc.json --fix",
-    "test": "npm run lint && tape test/*.js"
+    "test": "npm run lint && tape test/*.js",
+    "publish": "npm publish --access public"
   },
   "devDependencies": {
     "eslint": "^7.20.0",
