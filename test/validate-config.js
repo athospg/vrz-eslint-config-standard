@@ -7,7 +7,7 @@ test("load config in eslint to validate all rule syntax is correct", async t =>
 
   const cli = new CLIEngine({
     useEslintrc       : false,
-    overrideConfigFile: "eslintrc.json",
+    overrideConfigFile: ".eslintrc.js",
   });
 
   const code = `
