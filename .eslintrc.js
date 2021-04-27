@@ -3,14 +3,12 @@ const { rules: baseRules } = require("./lib/base-rules");
 module.exports = {
   extends: [ "./lib/base-rules" ],
 
-  parser       : "@typescript-eslint/parser",
   parserOptions: {
     ecmaVersion : 2021,
     ecmaFeatures: {
       jsx: true,
     },
     sourceType: "module",
-    project   : "./tsconfig.json",
   },
 
   env: {
@@ -26,11 +24,26 @@ module.exports = {
     window   : "readonly",
   },
 
-  rules: {},
+  rules: baseRules,
 
   overrides: [
     {
+      files: [ "*.js", "*.jsx" ],
+      rules: baseRules,
+    },
+    {
       files: [ "*.ts", "*.tsx" ],
+
+      parser       : "@typescript-eslint/parser",
+      parserOptions: {
+        ecmaVersion : 2021,
+        ecmaFeatures: {
+          jsx: true,
+        },
+        sourceType: "module",
+        project   : "./tsconfig.json",
+      },
+
       rules: {
         "constructor-super"   : "off",
         "getter-return"       : "off",
