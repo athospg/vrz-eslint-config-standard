@@ -1,0 +1,1 @@
+# VRZ eslint config standard

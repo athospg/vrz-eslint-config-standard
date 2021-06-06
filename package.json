@@ -1,33 +1,46 @@
 {
   "name": "@vrz/eslint-config-standard",
   "description": "ESLint Shareable Config",
-  "version": "0.1.1",
+  "version": "0.1.6",
   "author": {
     "name": "Athos Garcia",
     "email": "athospg@outlook.com"
   },
-  "license": "AGPL-3.0",
+  "license": "AGPL-3.0-or-later",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint . -c eslintrc.json",
-    "lint-fix": "eslint . -c eslintrc.json --fix",
+    "lint": "eslint . -c .eslintrc.js",
+    "lint-fix": "eslint . -c .eslintrc.js --fix",
     "test": "npm run lint && tape test/*.js",
-    "publish": "npm publish --access public"
+    "pub-pub": "npm publish --access public"
   },
+  "dependencies": {},
   "devDependencies": {
-    "eslint": "^7.20.0",
+    "@typescript-eslint/eslint-plugin": "^4.26.0",
+    "@typescript-eslint/parser": "^4.26.0",
+    "doctoc": "^2.0.0",
+    "eslint": "^7.28.0",
     "eslint-plugin-angular": "^4.0.1",
-    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^4.3.1",
-    "tape": "^5.0.1"
+    "eslint-plugin-promise": "^5.1.0",
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.3.1",
+    "prettier-package-json": "^2.6.0",
+    "tape": "^5.0.1",
+    "typescript": "^4.3.2"
   },
   "peerDependencies": {
-    "eslint": "^7.20.0",
+    "eslint": "^7.28.0",
     "eslint-plugin-angular": "^4.0.1",
-    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^4.3.1"
+    "eslint-plugin-promise": "^5.1.0"
   },
-  "dependencies": {}
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/athospg/vrz-eslint-config-standard.git"
+  }
 }
