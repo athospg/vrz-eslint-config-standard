@@ -20,7 +20,6 @@ ESLint plugins used by this config must also be installed within your project. T
 
 ```bash
 npm i -D eslint@latest \
-         eslint-config-prettier@latest \
          eslint-plugin-angular@latest \
          eslint-plugin-import@latest \
          eslint-plugin-node@latest \
