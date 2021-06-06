@@ -1,1 +1,10 @@
-test/
+*
+
+!/index.js
+!/lib/**/*
+
+!/package.json
+
+!/CHANGELOG.md
+!/LICENSE
+!/README.md
