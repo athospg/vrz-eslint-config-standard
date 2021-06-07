@@ -2,6 +2,20 @@
 
 Eslint rules for javascript and typescript
 
+- [VRZ eslint config standard](#vrz-eslint-config-standard)
+  - [Getting Started](#getting-started)
+    - [Installing](#installing)
+      - [Install ESLint plugins](#install-eslint-plugins)
+      - [Configure ESLint](#configure-eslint)
+    - [Configure the ESLint TypeScript parser](#configure-the-eslint-typescript-parser)
+  - [Developing](#developing)
+    - [Publish](#publish)
+  - [Contributing](#contributing)
+  - [Versioning](#versioning)
+  - [Authors](#authors)
+  - [License](#license)
+  - [Acknowledgments](#acknowledgments)
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
@@ -43,11 +57,11 @@ An example `.eslintrc.js`:
 
 ```js
 module.exports = {
-  extends: ['@vrz/eslint-config-standard'],
+  extends: ["@vrz/eslint-config-standard"],
 };
 ```
 
-### 4) Configure the ESLint TypeScript parser
+### Configure the ESLint TypeScript parser
 
 This config requires knowledge of your TypeScript config.
 
