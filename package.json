@@ -1,7 +1,7 @@
 {
   "name": "@vrz/eslint-config-standard",
   "description": "ESLint Shareable Config",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "author": {
     "name": "Athos Garcia",
     "email": "athospg@outlook.com"
@@ -23,7 +23,6 @@
     "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.0",
-    "husky": "^6.0.0",
     "lint-staged": "^11.0.0",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.3.1",
