@@ -169,5 +169,16 @@ module.exports = {
         "@typescript-eslint/object-curly-spacing": baseRules["object-curly-spacing"],
       },
     },
+    {
+      files: [ "*.spec.ts" ],
+      rules: {
+        "max-lines"             : "off",
+        "max-lines-per-function": "off",
+        "max-classes-per-file"  : "off",
+
+        "no-empty-function"                   : "off",
+        "@typescript-eslint/no-empty-function": "off",
+      },
+    },
   ],
 };
