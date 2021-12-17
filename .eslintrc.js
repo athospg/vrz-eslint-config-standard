@@ -61,6 +61,8 @@ module.exports = {
         "import/named"        : "off",
         "import/no-unresolved": "off",
 
+        "@typescript-eslint/no-explicit-any": "error",
+
         "brace-style"                   : "off",
         "@typescript-eslint/brace-style": baseRules["brace-style"],
 
@@ -170,14 +172,18 @@ module.exports = {
       },
     },
     {
-      files: [ "*.spec.ts" ],
+      files: [ "*.spec.ts", "*.spec.js" ],
       rules: {
-        "max-lines"             : "off",
-        "max-lines-per-function": "off",
-        "max-classes-per-file"  : "off",
+        /* Suggestions - Best Practices */
+        "dot-notation": "off",
 
         "no-empty-function"                   : "off",
         "@typescript-eslint/no-empty-function": "off",
+
+        /* Layout & Formatting */
+        "max-lines"             : "off",
+        "max-lines-per-function": "off",
+        "max-classes-per-file"  : "off",
       },
     },
   ],

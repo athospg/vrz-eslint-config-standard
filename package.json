@@ -1,7 +1,7 @@
 {
   "name": "@vrz/eslint-config-standard",
   "description": "ESLint Shareable Config",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "author": {
     "name": "Athos Garcia",
     "email": "athospg@outlook.com"
